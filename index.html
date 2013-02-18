@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+<title>Dr. Ebrahimi . com</title>
+
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="author" content="Erwin Aligam - styleshout.com" />
+<meta name="description" content="Site Description Here" />
+<meta name="keywords" content="keywords, here" />
+<meta name="robots" content="index, follow, noarchive" />
+<meta name="googlebot" content="noarchive" />
+
+<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+
+<script>
+    
+    $(document).ready(function() {
+    $('#book').click(function(){
+		
+			$.ajax({
+			
+				url:"book.php",
+				type: "POST",
+				success: function(msg){
+					$("#featured").hide('blind');
+					$('.entry').html(msg);
+				
+				}
+			});
+		});
+		$('#contact').click(function(){
+		
+			$.ajax({
+			
+				url:"contact.php",
+				type: "POST",
+				success: function(msg){
+					$("#featured").hide('blind');
+					$('.entry').html(msg);
+				
+				}
+			});
+		});
+		$('#patent').click(function(){
+		
+			$.ajax({
+			
+				url:"patent.php",
+				type: "POST",
+				success: function(msg){
+					$("#featured").hide('blind');
+					$('.entry').html(msg);
+				
+				}
+			});
+		});
+		$('.infosys').click(function(){
+		
+			$.ajax({
+			
+				url:"infosys.php",
+				type: "POST",
+				success: function(msg){
+					$("#featured").hide('blind');
+					$('.entry').html(msg);
+				
+				}
+			});
+		});
+		$('.web').click(function(){
+		
+			$.ajax({
+			
+				url:"web.php",
+				type: "POST",
+				success: function(msg){
+					$("#featured").hide('blind');
+					$('.entry').html(msg);
+				
+				}
+			});
+		});
+		$('.coop').click(function(){
+		
+			$.ajax({
+			
+				url:"coop.php",
+				type: "POST",
+				success: function(msg){
+					$("#featured").hide('blind');
+					$('.entry').html(msg);
+				
+				}
+			});
+		});
+		$('#articles').click(function(){
+		
+			$.ajax({
+			
+				url:"articles.php",
+				type: "POST",
+				success: function(msg){
+					$("#featured").hide('blind');
+					$('.entry').html(msg);
+				
+				}
+			});
+		});
+		$('.more-link').click(function(){
+		
+					$("#biblio").toggle('blind');
+
+		});
+		
+		
+	});
+</script>
+
+</head>
+
+<body>
+
+<!-- wrap starts here -->
+<div id="wrap">
+
+	<!--header -->
+	<div id="header">			
+				
+		<h1 id="logo-text"><a href="index.html" title="">Dr. Ebrahimi</a></h1>		
+		<p id="slogan">Programming easy ways... </p>	
+		
+		<div  id="nav">
+			<ul>
+				<li class="first" id="current"><a href="index.html">Home</a></li>
+				<li><a href="javascript:void(0);" id="book">Book</a></li>
+				<li><a href="javascript:void(0);" id="patent">Patent</a></li>
+				<li><a href="javascript:void(0);" id="articles"> Articles</a></li>
+				<li><a href="javascript:void(0);" id="courses">Courses</a></li>
+				<li><a href="javascript:void(0);" id="contact">Contact</a></li>	
+			
+				
+				
+			</ul>		
+		</div>	
+		
+		<div id="header-image"></div>
+						
+	<!--header ends-->					
+	</div>
+	
+	<!-- featured starts -->	
+	<div id="featured" class="clear">				
+				
+			<a name="TemplateInfo"></a>
+			
+			<div class="image-block">
+              <img src="images/ali.jpg" alt="featured"/>
+         </div>			
+			
+			<div class="text-block">
+			
+				<h2><a href="index.html">About Dr. Ebrahimi</a></h2>
+			
+                <p><strong>Dr. Alireza Ebrahimi</strong> obtained Ph.D. from the Polytechnic University of New York.
+                Dr.Ebrahimi teaching interests are Programming C/C++, Management Information Systems,
+                Web Systems, E-Commerce, Artificial Intelligence and Building Expert Systems.
+                Professor Ebrahimi’s research includes Managers acquaintance with technology, Web site
+                and System analysis, Programming Language and system Design.
+				</p>
+				<div id="biblio" style="display:none;">
+				<p>
+				Dr. Ebrahimi’s works have been published in various Journals and National and 
+				International conference proceedings such as The International Journal of Applied 
+				Management and Technology, Journal of Educational Technology Systems, International 
+				Journal of Learning, and Association for Computing Machinery/ Computer Science Education.
+				Dr. Ebrahimi published a two volume books and several book Chapters. Professor Ebrahimi 
+				invented: <a href="">Web VPCL</a> (with USPTO). During the last five years professor Ebrahimi published
+				five articles in peer-reviewed journals and 10 papers in conference proceedings.
+ 				</p>
+  				<p>
+				Dr. Ebrahimi received two Chancellors’ awards for Excellence in Teaching and a 
+				Scholarship and Creative from State University of New York. Dr. Ebrahimi served as 
+				chair of Computer Information Science/ Management information Systems for three years. 
+				Dr. Ebrahimi has served as chair and co-chair of AACSB faculty responsibilities and 
+				intellectual contributions. Dr. Ebrahimi is Director of Teaching for Learning Center 
+				at <a href="">SUNY Old Westbury</a> and co-organizer of the Annual Old Westbury Faculty Conference 
+				(2003 - 2012).
+				
+                </p> 
+				</div>
+				<p><a href="javascript:void(0)" class="more-link">Read More</a></p>
+								
+			</div>
+	
+	<!-- featured ends -->
+	</div>	
+	
+	<!-- content -->
+	<div id="content-outer" class="clear"><div id="content-wrap">
+	
+		<div id="content">
+		
+			<div id="left">			
+			
+				<div class="entry">
+				
+					<h4><a href="javascript:void(0)" id="articles">Articles</a></h4>
+				
+					<h3><a href="">Why Managers Should Be Acquainted With Technology?</a></h3>
+					<p class="post-info">By<a href="index.html"> Dr. Ebrahimi</a></p>
+					<p>
+					There has been a controversial debate over how well managers need to be acquainted
+					with the area of information technology, especially about what managers need to 
+					know of programming and understanding of web source code. Information is an 
+					indispensable key to business success and Information Technology (IT) facilitates 
+					the ability of business to use information to its advantage. It is the programs 
+					(software) that drive technology, the web page presents the business enterprise 
+					to everyone. In the heart of every business there also are managers responsible 
+					for keeping the records of performance, and using the records to promote efficiency,
+					discipline, and to get the job done. Today’s in-depth involvement of technology in 
+					the marketplace has created a strong correlation between IT and managers. Over time,
+					the bond between a manager and IT is becoming stronger, signaling the need for more 
+					interaction and understanding of both technical capabilities and business goals on 
+					the part of managers.		
+					</p>
+					
+								
+					<p><a class="more-link" href="index.html">continue reading</a></p>
+				
+				
+				<blockquote>
+					<p>The key is the communication and interaction between managers and programmers.</p>
+					<p class="align-right"> - Dr. Ebrahimi</p>
+				</blockquote>
+				</div>
+				
+				
+			</div>
+		
+			<div id="right">
+				<h3>Search</h3>
+			
+				<form id="quick-search" action="index.html" method="get" >
+					<p>
+					<label for="qsearch">Search:</label>
+					<input class="tbox" id="qsearch" type="text" name="qsearch" value="type and hit enter..." title="Start typing and hit ENTER" />
+					<input class="btn" alt="Search" type="image" name="searchsubmit" title="Search" src="images/search.gif" />
+					</p>
+				</form>	
+				<div class="sidemenu">
+					<h3>Courses</h3>
+					<ul>
+						<li><a href="javascript:void(0);" class="infosys">Info Sys for Mngrs</a></li>
+						<li><a href="javascript:void(0);" class="web">Web Sys & E-commerce</a></li>
+						<li><a href="javascript:void(0);" class="coop">C++ & Obj. Oriented Prog.</a></li>
+					</ul>
+				</div>
+							
+				<div class="sidemenu">
+					<h3>Links</h3>
+					<ul>
+						<li><a href="http://acm.com" title="Association for Computing Machinery">ACM <br />
+                            <span>Association for Computing Machinery.</span></a>
+                        </li>
+						<li><a href="www.oldwestbury.edu/" title="SUNY at Old Westbury">SUNY at Old Westbury <br />
+                            <span>State University of New York at Old Westbury</span></a>
+                        </li>
+					
+					</ul>
+				</div>
+				
+				
+					
+			</div>		
+		
+		</div>	
+			
+	<!-- content end -->	
+	</div></div>
+		
+	<!-- footer starts here -->	
+	<div id="footer-outer" class="clear"><div id="footer-wrap">
+	
+	
+	<!-- footer ends -->		
+	</div></div>
+	
+	<!-- footer-bottom starts -->		
+	<div id="footer-bottom">
+		<div class="bottom-left">
+			<p>
+			&copy; 2011 <strong>Dr. Ebrahimi</strong>&nbsp; &nbsp; &nbsp;
+			Maintained by <a href="index.html">Zainab Ebrahimi</a>
+			</p>
+		</div>
+	
+		<div class="bottom-right">
+			<p>					
+				<a href="index.html">Home</a> |
+				<a href="index.html">Sitemap</a> |
+				<a href="http://www.styleshout.com/">Styleshout</a> |
+				<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | 
+		   	<a href="http://validator.w3.org/check/referer">XHTML</a>	
+			</p>
+		</div>
+	<!-- footer-bottom ends -->		
+	</div>
+	
+<!-- wrap ends here -->
+</div>
+
+</body>
+</html>
